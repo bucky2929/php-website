@@ -9,10 +9,6 @@ pipeline {
         string(name: 'APPROVER_EMAIL', defaultValue: 'approver@example.com', description: 'Email address for deployment approval')
     }
 
-    environment {
-        // Define any environment variables here if needed
-    }
-
     stages {
         stage('Manual Approval') {
             steps {
